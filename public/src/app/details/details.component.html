@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<button id="home" class="btn btn-primary btn-sm" [routerLink]="['/pets']">Home</button>
+<h6>Details about {{ pet.name }}</h6>
+<div class="attributeColumn1">
+    <h6>Pet type:</h6>
+    <h6>Pet description:</h6>
+    <h6>Skills:</h6>
+</div>
+<div class="attributeColumn2">
+    <p>{{ pet.type }}</p>
+    <p>{{ pet.description }}</p>
+    <p *ngIf="pet.skills[0]">{{ pet.skills[0] }}</p>
+    <p *ngIf="pet.skills[1]">{{ pet.skills[1] }}</p>
+    <p *ngIf="pet.skills[2]">{{ pet.skills[2] }}</p>
+</div>
+<div id="likesRow">
+    <h6>Likes:</h6>
+    <p>{{ pet.likes }}</p>
+</div>
+<div id="buttonRow">
+    <button *ngIf="liked==false" class="btn btn-warning btn-sm" (click)="like()">Like this pet!</button>
+    <button id="adopt" class="btn btn-success btn-sm" (click)="adopt()">Adopt this pet!</button>
+</div>

@@ -1,0 +1,25 @@
+form{
+    padding: 10px;
+    border: 1px solid black;
+}
+.column1{
+    display: inline-block;
+    margin-right: 5px;
+}
+.column2{
+    display: inline-block;
+    vertical-align: top;
+}
+.column2 > *{
+    display: block;
+    margin-top: 5px;
+}
+#buttonRow > *{
+    margin-right: 8px;
+}
+.fieldDesc{
+    margin-bottom: 3px;
+}
+.mandatoryInput{
+    margin-bottom: 8px;
+}

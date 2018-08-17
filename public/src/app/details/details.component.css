@@ -1,0 +1,25 @@
+#home{
+    float: right;
+}
+.attributeColumn1{
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+.attributeColumn2{
+    display: inline-block;
+    line-height: 11px;
+    vertical-align: top;
+    position: relative;
+    top: 7px;
+}
+#adopt{
+    display: block;
+}
+#likesRow > *, #buttonRow > *{
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: top;
+}

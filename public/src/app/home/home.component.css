@@ -1,0 +1,12 @@
+table{
+    border: 1px solid black;
+    padding: 15px;
+    min-width: 350px;
+    width: 25%;
+}
+button{
+    margin-right: 5px;
+}
+table{
+    margin-top: 5px;
+}
